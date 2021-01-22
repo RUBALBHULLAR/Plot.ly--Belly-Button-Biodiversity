@@ -78,11 +78,15 @@ function getDemoInfo(id) {
 
     // read the json file to get data
     d3.json("samples.json").then((data)=> {
-        
+
         // get the metadata info for the demographic panel
-            var metadata = data.metadata;
-    
-            console.log(metadata)
+        var metadata = data.metadata;
+        console.log(metadata)
+        
+        // filter meta data info by id
+        var result = metadata.filter(meta => meta.id.toString() === id)[0];
+        // select demographic panel to put data
+        var demographicInfo = d3.select("#sample-metadata");
 
 
 
