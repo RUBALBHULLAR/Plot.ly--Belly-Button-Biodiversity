@@ -103,7 +103,12 @@ function optionChanged(id) {
     getDemoInfo(id);
 }
 
-
+// create the function for the initial data rendering
+function init(){
+      // select dropdown menu 
+      var dropdown = d3.select("#selDataset");
+      
+}
 
 
 
