@@ -117,6 +117,14 @@ function init(){
             dropdown.append("option").text(name).property("value");
         });
 
+        // call the functions to display the data and the plots to the page
+        getPlots(data.names[0]);
+        getDemoInfo(data.names[0]);
+    });
+}
+
+init();
+
 
 }
 
