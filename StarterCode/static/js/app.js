@@ -74,6 +74,8 @@ function getPlots(id){
     });
 }  
 // create the function to get the necessary data
+function getDemoInfo(id) {
+// read the json file to get data
 
 
 
