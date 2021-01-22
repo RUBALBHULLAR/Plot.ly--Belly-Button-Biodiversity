@@ -17,6 +17,9 @@ function getPlots(id){
         // get the top 10 labels for the plot
         var labels =  sampledata.samples[0].otu_labels.slice(0,10);
         console.log(`OTU_labels: ${labels}`)
+        var trace ={
+            
+        }
 
 
     }) 
