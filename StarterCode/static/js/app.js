@@ -25,7 +25,8 @@ function getPlots(id){
             color: 'blue'},
             type:"bar",
             orientation: "h",
-        }
+        };
+        // create data variable
 
 
     }) 
