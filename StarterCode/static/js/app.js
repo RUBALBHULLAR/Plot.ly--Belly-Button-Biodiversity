@@ -129,7 +129,7 @@
 function init() {
     var dropdown = d3.select("#selDataset");
 
-    d3.json("data/samples.json").then((samplesData) => {
+    d3.json("samples.json").then((samplesData) => {
         samplesData.names.forEach((sample) => {
             dropdown.append("option").text(sample).property("value", sample);
         });
@@ -153,7 +153,7 @@ function optionChanged(sampleID) {
 function createBarChart(selectedID) {
     console.log(selectedID.toString());
 
-    d3.json("data/samples.json").then((data) => {
+    d3.json("samples.json").then((data) => {
         var samples = data.samples;
         var selectedData = samples.filter(object => object.id == selectedID)[0];
         // initialize webpage with data from first sampleID
@@ -186,7 +186,7 @@ function createBarChart(selectedID) {
 };
 
 function createBubbleChart(selectedID) {
-    d3.json("data/samples.json").then((data) => {
+    d3.json("samples.json").then((data) => {
         var samples = data.samples;
         var selectedData = samples.filter(object => object.id == selectedID)[0];
 
@@ -217,7 +217,7 @@ function createBubbleChart(selectedID) {
 };
 
 function displayMetadata(selectedID) {
-    d3.json("data/samples.json").then((data) => {
+    d3.json("samples.json").then((data) => {
         
         // display metadata
         // get reference to panel body
