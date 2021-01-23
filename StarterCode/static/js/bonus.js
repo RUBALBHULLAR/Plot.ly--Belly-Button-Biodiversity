@@ -11,6 +11,7 @@ function freqGauge(wfreq) {
           axis: { 
             range: [null, 9], 
            
+            
            },
           bar: { color: "orange" },
           bgcolor: "blue",
