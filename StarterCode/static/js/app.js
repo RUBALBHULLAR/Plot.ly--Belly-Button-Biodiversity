@@ -128,7 +128,7 @@
 // populate dropdown
 function init() {
     var dropdown = d3.select("#selDataset");
-
+    //Read samples.json
     d3.json("samples.json").then((samplesData) => {
         samplesData.names.forEach((sample) => {
             dropdown.append("option").text(sample).property("value", sample);
@@ -201,7 +201,8 @@ function createBubbleChart(selectedID) {
             marker: {
                 color: otuIDstr,
                 size: selectedData.sample_values,
-                colorscale: "Jet"
+                colorscale: "Portland Heatmap"
+
             }
         }];
     
