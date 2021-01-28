@@ -42,13 +42,13 @@ The dataset reveals that a small handful of microbial species (also called opera
 
 6. Updating all of the plots any time that a new sample is selected.
 
-Additionally, creating any layout that for dashboard. An example dashboard is shown below:
+Additionally, creating any layout for dashboard. An example dashboard is shown below:
 
 ![hw](Images/hw02.png)
 
-## Advanced Challenge Assignment (Optional)
+## Advanced Challenge
 
-The following task is advanced and therefore optional.
+The following task is advanced.
 
 * Adapt the Gauge Chart from <https://plot.ly/javascript/gauge-charts/> to plot the weekly washing frequency of the individual.
 
